@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>그라츠커피랩 스타필드빌리지 운정점 | GRAZ COFFEE LAB</title>
+    <meta name="description" content="그라츠커피랩 스타필드빌리지 운정점 공식 웹사이트. 시그니처 너티드롭, 흑임자드롭, 말차드롭 크림커피와 아늑한 인테리어, 편리한 주차 혜택(최대 4시간)을 갖춘 운정의 감성 카페를 만나보세요.">
+    <meta name="keywords" content="그라츠커피랩, 그라츠커피랩 운정, 스타필드빌리지 운정 카페, 너티드롭, 흑임자드롭, 말차드롭, 파주 운정 카페, 운정 크림커피, 야당역 카페">
+    <meta property="og:title" content="그라츠커피랩 스타필드빌리지 운정점 | GRAZ COFFEE LAB">
+    <meta property="og:description" content="시그니처 너티드롭 크림커피의 깊고 풍부한 맛을 스타필드빌리지 운정점에서 직접 경험해 보세요.">
+    <meta property="og:image" content="assets/interior1.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                GRAZ COFFEE LAB<span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav">
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#brewer" class="nav-link">Virtual Brewer</a>
+                <a href="#visit" class="nav-link">Visit Us</a>
+            </nav>
+            
+            <div class="live-status-container">
+                <span class="status-dot"></span>
+                <span class="status-text" id="store-status">영업 정보 불러오는 중...</span>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#story" class="mobile-nav-link">Our Story</a>
+        <a href="#menu" class="mobile-nav-link">Menu</a>
+        <a href="#brewer" class="mobile-nav-link">Virtual Brewer</a>
+        <a href="#visit" class="mobile-nav-link">Visit Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Background Slideshow -->
+        <div class="hero-slides">
+            <div class="hero-slide active" style="background-image: linear-gradient(180deg, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 0.95) 100%), url('assets/interior1.png');"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 0.95) 100%), url('assets/interior2.png');"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 0.95) 100%), url('assets/interior3.png');"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(180deg, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 0.95) 100%), url('assets/interior4.png');"></div>
+        </div>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">A Seoulful Blend for Every Soul</span>
+            <h1 class="hero-title">
+                그라츠커피랩<br>
+                <span class="highlight">스타필드빌리지 운정점</span>
+            </h1>
+            <p class="hero-desc">
+                매일 직접 만든 쫀득하고 달콤한 수제 크림과 엄선된 원두의 조화.<br>
+                비엔나 커피의 영감을 담은 시그니처 '드롭' 시리즈를 운정에서 만나보세요.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">시그니처 메뉴 보기</a>
+                <a href="#visit" class="btn btn-secondary">매장 방문 안내</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse-icon">
+                <span class="mouse-wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-img-container reveal-left">
+                    <div class="story-slider">
+                        <img src="assets/interior1.png" alt="그라츠커피랩 스타필드빌리지 운정점 내부 1" class="story-img active">
+                        <img src="assets/interior2.png" alt="그라츠커피랩 스타필드빌리지 운정점 내부 2" class="story-img">
+                        <img src="assets/interior3.png" alt="그라츠커피랩 스타필드빌리지 운정점 내부 3" class="story-img">
+                        <img src="assets/interior4.png" alt="그라츠커피랩 스타필드빌리지 운정점 내부 4" class="story-img">
+                        
+                        <button class="slider-arrow prev" id="story-prev" aria-label="이전 사진"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="slider-arrow next" id="story-next" aria-label="다음 사진"><i class="fa-solid fa-chevron-right"></i></button>
+                        
+                        <div class="slider-dots" id="story-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
+                    </div>
+                    <div class="story-img-badge">
+                        <span class="badge-num">01</span>
+                        <span class="badge-txt">REAL CAFE VIEW</span>
+                    </div>
+                </div>
+                <div class="story-text-container reveal-right">
+                    <span class="section-tag">OUR STORY</span>
+                    <h2 class="section-title">오스트리아 비엔나에서<br>서울의 감각까지</h2>
+                    <p class="story-paragraph">
+                        오스트리아 여행 중 우연히 들른 작은 골목의 비엔나 커피. 그 한 잔이 주었던 깊은 위안과 달콤함에서 그라츠커피랩은 출발했습니다. 
+                    </p>
+                    <p class="story-paragraph">
+                        우리는 에스프레소의 쌉쌀하고 묵직한 바디감 위에 고소한 너티, 흑임자, 말차 크림 등 현대적인 감각의 수제 크림을 얹어, 가장 서울다우면서도 트렌디한 한 잔을 완성합니다.
+                    </p>
+                    <div class="story-features">
+                        <div class="story-feature-item">
+                            <span class="feature-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                            <span class="feature-title">스페셜티 원두 블렌드</span>
+                        </div>
+                        <div class="story-feature-item">
+                            <span class="feature-icon"><i class="fa-solid fa-stroopwafel"></i></span>
+                            <span class="feature-title">매일 만드는 수제 크림</span>
+                        </div>
+                        <div class="story-feature-item">
+                            <span class="feature-icon"><i class="fa-solid fa-couch"></i></span>
+                            <span class="feature-title">트렌디한 미니멀 공간</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">SIGNATURE DRIPS & DROPS</span>
+                <h2 class="section-title">그라츠 대표 시그니처</h2>
+                <p class="section-desc">그라츠커피랩만의 시그니처 '드롭(Drop)' 크림커피 라인업을 소개합니다.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Menu Item 1: Nutty Drop -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/nutty_drop.png" alt="너티드롭" class="menu-img">
+                        <span class="menu-badge badge-signature">SIGNATURE</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">너티드롭 <span class="eng-name">Nutty Drop</span></h3>
+                            <span class="menu-price">5,900원</span>
+                        </div>
+                        <p class="menu-desc">
+                            그라츠의 부동의 1위 메뉴. 고소하고 달콤한 피넛크림과 에스프레소, 그리고 차가운 우유가 이루는 완벽한 3단 레이어의 깊은 풍미.
+                        </p>
+                        <div class="menu-tags">
+                            <span class="menu-tag-item">피넛크림</span>
+                            <span class="menu-tag-item">에스프레소</span>
+                            <span class="menu-tag-item">우유</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2: Black Sesame Drop -->
+                <div class="menu-card reveal-up" style="animation-delay: 0.1s;">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/sesame_drop.png" alt="흑임자드롭" class="menu-img">
+                        <span class="menu-badge badge-popular">POPULAR</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">흑임자드롭 <span class="eng-name">Sesame Drop</span></h3>
+                            <span class="menu-price">5,900원</span>
+                        </div>
+                        <p class="menu-desc">
+                            국산 흑임자의 극강의 고소함과 에스프레소의 진한 맛이 합쳐져 입안 가득 꽉 찬 풍미를 선사하는 전통 퓨전 크림라떼.
+                        </p>
+                        <div class="menu-tags">
+                            <span class="menu-tag-item">흑임자크림</span>
+                            <span class="menu-tag-item">에스프레소</span>
+                            <span class="menu-tag-item">고소함</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3: Matcha Drop -->
+                <div class="menu-card reveal-up" style="animation-delay: 0.2s;">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/matcha_drop.png" alt="말차드롭" class="menu-img">
+                        <span class="menu-badge">SEASONAL</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">말차드롭 <span class="eng-name">Matcha Drop</span></h3>
+                            <span class="menu-price">5,900원</span>
+                        </div>
+                        <p class="menu-desc">
+                            진하게 우려낸 말차 베이스에 고소한 우유, 그리고 그라츠만의 퓨어 크림이 사르르 내려앉는 쌉싸름하고 달콤한 조화.
+                        </p>
+                        <div class="menu-tags">
+                            <span class="menu-tag-item">말차베이스</span>
+                            <span class="menu-tag-item">퓨어크림</span>
+                            <span class="menu-tag-item">우유</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Menu Items Grid -->
+            <div class="other-menu-title reveal-up">
+                <h3>MORE MENU ITEMS</h3>
+            </div>
+            
+            <div class="other-menu-grid reveal-up">
+                <div class="other-menu-item">
+                    <div class="other-menu-meta">
+                        <span class="other-menu-name">플랫화이트 <span class="eng">Flat White</span></span>
+                        <span class="other-menu-price">4,700원</span>
+                    </div>
+                    <p class="other-menu-desc">진한 리스트레토 샷과 에멀전 가공 스팀 밀크로 부드러움을 극대화한 정통 라떼</p>
+                </div>
+                
+                <div class="other-menu-item">
+                    <div class="other-menu-meta">
+                        <span class="other-menu-name">상하목장 아이스크림 <span class="eng">Ice Cream</span></span>
+                        <span class="other-menu-price">4,500원</span>
+                    </div>
+                    <p class="other-menu-desc">100% 유기농 상하목장 우유 아이스크림에 바삭한 초코 그래놀라가 듬뿍</p>
+                </div>
+                
+                <div class="other-menu-item">
+                    <div class="other-menu-meta">
+                        <span class="other-menu-name">아메리카노 <span class="eng">Americano</span></span>
+                        <span class="other-menu-price">3,900원</span>
+                    </div>
+                    <p class="other-menu-desc">그라츠 시그니처 블렌드의 풍부한 아로마와 깔끔한 끝맛</p>
+                </div>
+
+                <div class="other-menu-item">
+                    <div class="other-menu-meta">
+                        <span class="other-menu-name">모카 드롭 <span class="eng">Mocha Drop</span></span>
+                        <span class="other-menu-price">5,900원</span>
+                    </div>
+                    <p class="other-menu-desc">달콤한 카카오와 에스프레소, 벨벳 모카 크림의 초콜릿 향 가득한 드롭</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Coffee Brewer Section -->
+    <section class="brewer-section" id="brewer">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">MICRO-INTERACTION</span>
+                <h2 class="section-title">나만의 가상 커피 브루잉</h2>
+                <p class="section-desc" style="max-width: 100%; white-space: nowrap;">그라츠 시그니처 드롭 음료가 컵 속에서 레이어를 이루는 과정을 직접 만들어 보세요.</p>
+            </div>
+
+            <div class="brewer-container reveal-up">
+                <!-- Left Side: Coffee Glass Visualizer -->
+                <div class="brewer-visualizer">
+                    <div class="coffee-cup-wrapper">
+                        <!-- Stream of pouring liquid -->
+                        <div class="liquid-stream" id="liquid-stream"></div>
+                        
+                        <!-- The Cup Graphic -->
+                        <div class="coffee-glass">
+                            <div class="glass-rim"></div>
+                            <div class="glass-body">
+                                <!-- Drink layers inside the glass (order matters: first child = visual bottom with column-reverse) -->
+                                <div class="drink-layer layer-bottom" id="layer-bottom">
+                                    <span class="layer-label" id="label-bottom">Base / Milk</span>
+                                </div>
+                                <div class="drink-layer layer-middle" id="layer-middle">
+                                    <span class="layer-label" id="label-middle">Espresso</span>
+                                </div>
+                                <div class="drink-layer layer-top" id="layer-top">
+                                    <span class="layer-label" id="label-top">Top Cream</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brewer-status-display" id="brewer-status-display">
+                        메뉴를 선택하고 아래 'Brew Coffee' 버튼을 눌러주세요.
+                    </div>
+                </div>
+
+                <!-- Right Side: Brewing Controller -->
+                <div class="brewer-controls">
+                    <h3 class="controls-title">레시피 선택</h3>
+                    
+                    <div class="recipe-options">
+                        <div class="recipe-btn active" data-recipe="nutty">
+                            <div class="recipe-icon"><i class="fa-solid fa-circle" style="color: #d2a679;"></i></div>
+                            <div class="recipe-details">
+                                <span class="recipe-name">너티드롭 (Nutty Drop)</span>
+                                <span class="recipe-brief">피넛 크림 + 에스프레소 + 우유</span>
+                            </div>
+                        </div>
+                        
+                        <div class="recipe-btn" data-recipe="sesame">
+                            <div class="recipe-icon"><i class="fa-solid fa-circle" style="color: #6c757d;"></i></div>
+                            <div class="recipe-details">
+                                <span class="recipe-name">흑임자드롭 (Sesame Drop)</span>
+                                <span class="recipe-brief">흑임자 크림 + 에스프레소 + 우유</span>
+                            </div>
+                        </div>
+                        
+                        <div class="recipe-btn" data-recipe="matcha">
+                            <div class="recipe-icon"><i class="fa-solid fa-circle" style="color: #556b2f;"></i></div>
+                            <div class="recipe-details">
+                                <span class="recipe-name">말차드롭 (Matcha Drop)</span>
+                                <span class="recipe-brief">퓨어 크림 + 우유 + 말차 베이스</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brew-action-row">
+                        <button class="btn btn-primary btn-brew" id="brew-btn">
+                            <i class="fa-solid fa-fill-drip"></i> Brew Coffee
+                        </button>
+                        <button class="btn btn-secondary btn-reset" id="reset-btn">
+                            초기화
+                        </button>
+                    </div>
+
+                    <div class="recipe-card-info" id="recipe-card-info">
+                        <h4 class="recipe-card-title">너티드롭 레시피 노트</h4>
+                        <div class="recipe-notes-list">
+                            <div class="recipe-note"><span class="note-lbl">아래층:</span> <span class="note-val">차가운 우유 (부드러운 바디)</span></div>
+                            <div class="recipe-note"><span class="note-lbl">중간층:</span> <span class="note-val">진한 스페셜티 에스프레소 샷</span></div>
+                            <div class="recipe-note"><span class="note-lbl">위층:</span> <span class="note-val">시그니처 고소한 땅콩 크림 토핑</span></div>
+                            <div class="recipe-note"><span class="note-lbl">음용 팁:</span> <span class="note-val">빨대를 쓰지 않고 잔을 기울여 크림과 커피, 우유를 한 번에 들이켜세요.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit & Store Info Section -->
+    <section class="visit-section" id="visit">
+        <div class="container">
+            <div class="visit-grid">
+                <!-- Store Details Card -->
+                <div class="visit-info-card reveal-left">
+                    <span class="section-tag">VISIT US</span>
+                    <h2 class="section-title">그라츠커피랩<br>스타필드빌리지 운정점</h2>
+                    
+                    <div class="visit-details-list">
+                        <!-- Address -->
+                        <div class="visit-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="detail-content">
+                                <h4>위치 및 주소</h4>
+                                <p>경기 파주시 와석순환로515번길 70 스타필드빌리지 B동 1층 2111호</p>
+                                <span class="detail-subtext">* 어린이 놀이터 앞 마당 방면 광장 1층에 있어 찾기 쉽습니다.</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Operating Hours -->
+                        <div class="visit-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="detail-content">
+                                <h4>운영 시간</h4>
+                                <p><strong>매일 08:30 - 22:00</strong></p>
+                                <span class="detail-subtext">* 라스트 오더 21:20</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Phone -->
+                        <div class="visit-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="detail-content">
+                                <h4>전화번호</h4>
+                                <p><a href="tel:02-511-8530" class="tel-link">02-511-8530</a></p>
+                            </div>
+                        </div>
+                        
+                        <!-- Parking & Benefits -->
+                        <div class="visit-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-square-parking"></i></div>
+                            <div class="detail-content">
+                                <h4>주차 및 편의 혜택</h4>
+                                <p>스타필드 빌리지 지하 주차장 이용 시 <strong>최대 4시간 무료 주차 등록 지원</strong></p>
+                                <p class="amenities-icons">
+                                    <span title="단체석 완비"><i class="fa-solid fa-users"></i> 단체석</span>
+                                    <span title="야외 테라스석"><i class="fa-solid fa-umbrella-beach"></i> 테라스</span>
+                                    <span title="휠체어 입장 가능"><i class="fa-solid fa-wheelchair"></i> 배리어프리</span>
+                                    <span title="유아용 의자 구비"><i class="fa-solid fa-baby"></i> 아기의자</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Styled Map Visual & CTA -->
+                <div class="visit-map-container reveal-right">
+                    <div class="styled-map-mock">
+                        <div class="map-grid-pattern"></div>
+                        <div class="map-marker-pulsate"></div>
+                        <div class="map-card-popup">
+                            <h5>GRAZ COFFEE LAB</h5>
+                            <p>스타필드빌리지 운정 B동 1층</p>
+                            <span class="map-badge">놀이터 앞 광장</span>
+                        </div>
+                        <div class="map-branding-logo">GRAZ</div>
+                    </div>
+                    
+                    <div class="map-actions">
+                        <a href="https://map.naver.com/p/entry/place/2015421488" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-map-naver">
+                            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath fill='%23FFF' d='M96 0H24C10.7 0 0 10.7 0 24v72c0 13.3 10.7 24 24 24h72c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24z'/%3E%3Cpath fill='%2303C75A' d='M83.9 29.5H62.7l-20 29.5v-29.5H23.9v60.9h21.2l20-29.5v29.5h18.8V29.5z'/%3E%3C/svg%3E" alt="Naver Map" class="naver-logo-svg">
+                            네이버 지도로 빠른 길찾기
+                        </a>
+                        <a href="https://www.instagram.com/gcl_unjeong" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-instagram">
+                            <i class="fa-brands fa-instagram"></i> 공식 인스타그램 (@gcl_unjeong)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-brand">
+                    <h3>GRAZ COFFEE LAB</h3>
+                    <p class="brand-subtext">A Seoulful Blend for Every Soul.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#story">Our Story</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#brewer">Virtual Brewer</a>
+                    <a href="#visit">Visit Us</a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Graz Coffee Lab Starfield Village Unjeong. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/gcl_unjeong" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://map.naver.com/p/entry/place/2015421488" target="_blank" rel="noopener noreferrer" aria-label="Naver Map"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
