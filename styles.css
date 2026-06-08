@@ -1069,9 +1069,9 @@ section {
 .recipe-note {
     font-size: 0.8rem;
     line-height: 1.4;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
 }
 
 .note-lbl {
@@ -1079,10 +1079,12 @@ section {
     color: var(--text-white);
     display: inline-block;
     min-width: 55px;
+    flex-shrink: 0;
 }
 
 .note-val {
     color: var(--text-muted);
+    white-space: normal;
 }
 
 /* Visit Us Section */
@@ -1560,6 +1562,52 @@ section {
     
     .other-menu-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Virtual Brewer mobile adjustments */
+    .brewer-container {
+        padding: 20px 15px;
+        border-radius: 16px;
+    }
+    
+    .brewer-visualizer {
+        padding: 20px 10px;
+        min-height: 400px;
+        width: 100%;
+    }
+    
+    .coffee-cup-wrapper {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .recipe-btn {
+        padding: 12px 16px;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .recipe-name {
+        font-size: 0.95rem;
+    }
+    
+    .recipe-brief {
+        font-size: 0.75rem;
+        white-space: normal;
+    }
+    
+    .brew-action-row {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-brew, .btn-reset {
+        width: 100%;
+    }
+
+    .recipe-card-info {
+        padding: 15px;
     }
     
     .map-actions {
